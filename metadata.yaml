@@ -1,0 +1,20 @@
+name: vl-test
+summary: vl-test
+description: vl-test
+maintainers:
+  - 'Cory Johns <johnsca@gmail.com>'
+series:
+  - bionic
+  - xenial
+storage:
+  secrets:
+    type: block
+    vaultlocker-encrypt: true
+    vaultlocker-mountbase: /mnt/vl-test
+  multi-secrets:
+    type: block
+    vaultlocker-encrypt: true
+    vaultlocker-mountbase: /mnt/vl-test
+    multiple:
+      range: 0-2
+
